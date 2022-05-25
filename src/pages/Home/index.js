@@ -354,7 +354,7 @@ export default function Home({ navigation }) {
             />
             <DataKategori
               warna={colors.primary}
-              onPress={() => navigation.navigate('Hasil')}
+              onPress={() => navigation.navigate('ChatList')}
               icon="chatbubble-ellipses-outline"
               nama="CHAT"
               nama2="Menu chatting"

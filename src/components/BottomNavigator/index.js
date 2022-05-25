@@ -56,7 +56,7 @@ export default function BottomNavigator({ state, descriptors, navigation }) {
           iconName = 'home-outline';
         } else if (label === 'Account') {
           iconName = 'person-outline';
-        } else if (label === 'Chat') {
+        } else if (label === 'ChatList') {
           iconName = 'chatbubble-ellipses-outline';
         } else if (label === 'Asset') {
           iconName = 'pulse-outline';
@@ -113,7 +113,7 @@ export default function BottomNavigator({ state, descriptors, navigation }) {
                     fontSize: windowWidth / 45,
                     color: isFocused ? colors.white : colors.white,
                   }}>
-                  {label == 'Asset' ? 'Rate' : label}
+                  {/* {label == 'Asset' ? 'Rate' : label} */}
                 </Text>
               </View>
             </View>

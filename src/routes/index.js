@@ -71,6 +71,9 @@ import MenuHukuman from '../pages/MenuHukuman';
 import MenuPemberitahuan from '../pages/MenuPemberitahuan';
 import MenuDosir from '../pages/MenuDosir';
 import MenuGambar from '../pages/MenuGambar';
+import Chat from '../pages/Chat';
+import ChatAdd from '../pages/ChatAdd';
+import ChatList from '../pages/chatList';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -79,9 +82,7 @@ const MainApp = () => {
   return (
     <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Chat" component={Asset} />
-      {/*<Tab.Screen name="Cart" component={Cart} />  */}
-      {/* <Tab.Screen name="Notifikasi" component={Notifikasi} /> */}
+      <Tab.Screen name="ChatList" component={ChatList} />
       <Tab.Screen name="Account" component={Account} />
     </Tab.Navigator>
   );
@@ -489,6 +490,61 @@ export default function Router() {
         component={MenuDosir}
         options={{
           headerTitle: 'Dosir',
+          headerStyle: {
+            backgroundColor: colors.primary,
+          },
+          headerTintColor: '#fff',
+          cardStyleInterpolator: ({ current, layouts }) => {
+            return {
+              cardStyle: {
+                transform: [
+                  {
+                    translateX: current.progress.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [layouts.screen.width, 0],
+                    }),
+                  },
+                ],
+              },
+            };
+          },
+        }}
+      />
+
+
+      <Stack.Screen
+        name="Chat"
+        component={Chat}
+        options={{
+          headerShown: false,
+          headerTitle: 'Chatting',
+          headerStyle: {
+            backgroundColor: colors.primary,
+          },
+          headerTintColor: '#fff',
+          cardStyleInterpolator: ({ current, layouts }) => {
+            return {
+              cardStyle: {
+                transform: [
+                  {
+                    translateX: current.progress.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [layouts.screen.width, 0],
+                    }),
+                  },
+                ],
+              },
+            };
+          },
+        }}
+      />
+
+      <Stack.Screen
+        name="ChatAdd"
+        component={ChatAdd}
+        options={{
+          headerShown: true,
+          headerTitle: 'New Chatting',
           headerStyle: {
             backgroundColor: colors.primary,
           },
