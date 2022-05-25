@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "568486370913",
+    "project_id": "sikbinpers",
+    "storage_bucket": "sikbinpers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568486370913:android:c53c333fcf22a483605420",
+        "android_client_info": {
+          "package_name": "com.sikbinpers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568486370913-gt0cqnhoikl5pi2nl4d85rfjsupmkiuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvXQHGAFfH_pOcyjzVeUWxrPsaxIW45v0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568486370913-gt0cqnhoikl5pi2nl4d85rfjsupmkiuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
