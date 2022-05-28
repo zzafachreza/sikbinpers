@@ -21,15 +21,29 @@ import { fonts, windowHeight, windowWidth } from '../../utils/fonts';
 import { storeData, getData } from '../../utils/localStorage';
 import { Icon } from 'react-native-elements';
 import axios from 'axios';
-
+import { useIsFocused } from '@react-navigation/native';
 export default function ChatList({ navigation }) {
-
-    const [data, setData] = useState([]);
-
+    const isFocused = useIsFocused();
+    const [data, setData] = useState([
+        // {
+        //     id: 1
+        // }
+    ]);
+    const [user, setUser] = useState({});
     useEffect(() => {
+        if (isFocused) {
+            getDataListChat();
+        }
+    }, [isFocused]);
+
+
+
+
+    const getDataListChat = () => {
         getData('user').then(res => {
+            setUser(res);
             axios
-                .post('https://sikbinpers.zavalabs.com/api/1data_user.php', {
+                .post('https://sikbinpers.zavalabs.com/api/1data_userchat.php', {
                     id_user: res.id
                 })
                 .then(dt => {
@@ -37,16 +51,28 @@ export default function ChatList({ navigation }) {
                     setData(dt.data)
                 })
         })
-    }, []);
+    }
 
     const __renderItem = ({ item }) => {
         return (
-            <TouchableOpacity style={{
-                padding: 15,
-                borderBottomWidth: 1,
-                borderBottomColor: '#CDCDCD',
-                flexDirection: 'row'
-            }}>
+            <TouchableOpacity
+
+                onPress={() => {
+                    navigation.navigate('Chat', {
+                        id_lawan: item.id_lawan,
+                        id_user: user.id,
+                        icon_lawan: item.icon_lawan,
+                        nama_lawan: item.nama_lengkap,
+                        pangkat_lawan: item.pangkat,
+                        kesatuan_lawan: item.kesatuan
+                    })
+                }}
+                style={{
+                    padding: 15,
+                    borderBottomWidth: 1,
+                    borderBottomColor: '#CDCDCD',
+                    flexDirection: 'row'
+                }}>
                 <View style={{
                     width: 40,
                     height: 40,
@@ -63,15 +89,28 @@ export default function ChatList({ navigation }) {
                 </View>
                 <View style={{
                     paddingLeft: 10,
+                    flex: 1,
+                    justifyContent: 'center'
                 }}>
                     <Text style={{
                         fontFamily: fonts.secondary[600],
                         fontSize: windowWidth / 25
                     }}>{item.nama_lengkap}</Text>
-                    <Text style={{
+                    {/* <Text style={{
                         fontFamily: fonts.secondary[400],
                         fontSize: windowWidth / 30
-                    }}>{item.pangkat} - {item.kesatuan}</Text>
+                    }}>{item.pesan}</Text> */}
+                </View>
+                <View style={{
+                    justifyContent: 'center',
+                    alignItems: 'center',
+
+                }}>
+                    <Text style={{
+                        fontFamily: fonts.secondary[400],
+                        fontSize: windowWidth / 30,
+                        color: colors.black
+                    }}>{item.tanggal}</Text>
                 </View>
             </TouchableOpacity>
 
@@ -104,7 +143,7 @@ export default function ChatList({ navigation }) {
                 </TouchableOpacity>
             </View>
 
-            {/* <FlatList data={data} renderItem={__renderItem} /> */}
+            <FlatList data={data} renderItem={__renderItem} />
 
         </SafeAreaView >
     )

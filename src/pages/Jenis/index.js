@@ -88,112 +88,154 @@ export default function ({ navigation }) {
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 0
+                        id: [
+                            {
+                                id: 0
+                            },
+                            {
+                                id: 1
+                            }
+                        ]
                     })}
                     icon="star-outline"
-                    nama="KENAIKAN PANGKAT KE GOLONGAN III/a – III/d"
+                    nama="KENAIKAN PANGKAT"
                 />
+
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 1
-                    })}
-                    icon="medal-outline"
-                    nama="KENAIKAN PANGKAT KE GOLONGAN IV/a KE ATAS"
-                />
-                <DataKategori
-                    warna={colors.primary}
-                    onPress={() => navigation.navigate('MenuGambar', {
-                        id: 2
-                    })}
-                    icon="repeat-outline"
-                    nama="PENGANGKATAN DALAM JABATAN STRUKTURAL (GOLJAB IX – VII)"
-                />
-                <DataKategori
-                    warna={colors.primary}
-                    onPress={() => navigation.navigate('MenuGambar', {
-                        id: 3
+                        id: [
+                            {
+                                id: 2
+                            },
+                            {
+                                id: 3
+                            },
+                            {
+                                id: 4
+                            }
+                        ]
                     })}
                     icon="receipt-outline"
-                    nama="PENGANGKATAN DALAM JABATAN STRUKTURAL (GOLJAB VI – V)"
+                    nama="JABATAN"
+                />
+                <DataKategori
+                    warna={colors.primary}
+                    onPress={() => navigation.navigate('MenuGambar', {
+                        id: [
+                            {
+                                id: 5
+                            },
+                            {
+                                id: 6
+                            },
+                            {
+                                id: 7
+                            }
+                        ]
+                    })}
+                    icon="repeat-outline"
+                    nama="PEMINDAHAN"
                 />
 
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 4
-                    })}
-                    icon="swap-horizontal-outline"
-                    nama="PENGANGKATAN DALAM JABATAN FUNGSIONAL"
-                />
-                <DataKategori
-                    warna={colors.primary}
-                    onPress={() => navigation.navigate('MenuGambar', {
-                        id: 5
+                        id: [
+                            {
+                                id: 8
+                            }
+
+                        ]
                     })}
                     icon="ribbon-outline"
-                    nama="PINDAH ANTAR KOTAMA/BALAKPUS"
+                    nama="TANDA KEHORMATAN SLKS"
                 />
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 6
+                        id: [
+                            {
+                                id: 9
+                            }
+                        ]
                     })}
                     icon="add-circle-outline"
-                    nama="PINDAH ANTAR ANGKATAN"
+                    nama="TAMBAH GELAR"
                 />
+
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 7
+                        id: [
+                            {
+                                id: 13
+                            },
+
+                        ]
                     })}
-                    icon="exit-outline"
-                    nama="PINDAH ANTAR KEMENTERIAN/LEMBAGA"
+                    icon="expand-outline"
+                    nama="GANTI"
                 />
-
 
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 8
+                        id: [
+                            {
+                                id: 14
+                            },
+
+                        ]
                     })}
-                    icon="ribbon-outline"
-                    nama="PEMBERIAN TANDA KEHORMATAN SATYALANCANA KARYA SATYA"
+                    icon="log-out-outline"
+                    nama="CUTI DI LUAR TANGGUNGAN NEGARA"
                 />
-
 
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 9
+                        id: [
+                            {
+                                id: 15
+                            },
+
+                        ]
                     })}
-                    icon="card-outline"
-                    nama="TAMBAH GELAR PNS AD"
+                    icon="flash-outline"
+                    nama="KARPEG"
                 />
+
 
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 10
+                        id: [
+                            {
+                                id: 10
+                            },
+                            {
+                                id: 11
+                            },
+                        ]
                     })}
-                    icon="shuffle-outline"
-                    nama="HUKUMAN DISIPLIN PERSETUJUAN KEMHAN (KUMPLIN SEDANG)"
+                    icon="close-outline"
+                    nama="HUKUMAN DISIPLIN"
                 />
 
-                <DataKategori
-                    warna={colors.primary}
-                    onPress={() => navigation.navigate('MenuGambar', {
-                        id: 11
-                    })}
-                    icon="archive-outline"
-                    nama="HUKUMAN DISIPLIN WEWENANG KEMHAN (KUMPLIN BERAT)"
-                />
+
+
 
 
                 <DataKategori
                     warna={colors.primary}
                     onPress={() => navigation.navigate('MenuGambar', {
-                        id: 12
+                        id: [
+                            {
+                                id: 12
+                            },
+
+                        ]
                     })}
                     icon="hand-right-outline"
                     nama="PEMBERHENTIAN"

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { windowHeight, windowWidth } from '../../utils/fonts';
@@ -48,18 +48,52 @@ export default function ({ route }) {
         {
             image: require('../../assets/Slide13.png'),
         },
+        {
+            image: require('../../assets/Slide14.png'),
+        },
+        {
+            image: require('../../assets/Slide15.png'),
+        },
+        {
+            image: require('../../assets/Slide16.png'),
+        },
     ]
 
-    return (
-        <SafeAreaView style={{
-            backgroundColor: colors.white,
-        }}>
+
+
+
+
+    const MyImage = ({ id }) => {
+
+
+
+        return (
             <Image source={data[id].image} style={{
 
                 width: windowWidth,
                 height: windowHeight,
                 resizeMode: 'contain'
             }} />
+        )
+
+
+
+    }
+
+
+
+
+    return (
+        <SafeAreaView style={{
+            backgroundColor: colors.white,
+        }}>
+            <ScrollView>
+                {id.map(item => {
+                    return (
+                        <MyImage id={item.id} />
+                    )
+                })}
+            </ScrollView>
         </SafeAreaView>
     )
 }

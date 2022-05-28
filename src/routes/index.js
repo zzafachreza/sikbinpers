@@ -73,7 +73,7 @@ import MenuDosir from '../pages/MenuDosir';
 import MenuGambar from '../pages/MenuGambar';
 import Chat from '../pages/Chat';
 import ChatAdd from '../pages/ChatAdd';
-import ChatList from '../pages/chatList';
+import ChatList from '../pages/ChatList';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();

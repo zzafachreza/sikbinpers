@@ -81,7 +81,7 @@ export default function Register({ navigation }) {
         message: 'Maaf Password masih kosong !',
       });
     } else {
-      setLoading(true);
+      // setLoading(true);
       console.log(data);
       axios
         .post('https://sikbinpers.zavalabs.com/api/register.php', data)
@@ -89,7 +89,7 @@ export default function Register({ navigation }) {
           console.warn(res.data);
           let err = res.data.split('#');
 
-          // console.log(err[0]);
+          console.log(err[0]);
           if (err[0] == 50) {
             setTimeout(() => {
               setLoading(false);

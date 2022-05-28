@@ -11,5 +11,7 @@ export const colors = {
   border: '#7D8797',
   zavalabs: '#CECECE',
   zavalabs2: '#F5F5F5',
-  zavalabs2: '#E8E8E8'
+  zavalabs2: '#E8E8E8',
+  chat: '#DCF8C5',
+  chat2: ''
 };

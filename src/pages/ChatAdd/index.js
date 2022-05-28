@@ -55,7 +55,10 @@ export default function ChatAdd({ navigation }) {
                 navigation.navigate('Chat', {
                     id_lawan: item.id_lawan,
                     id_user: user.id,
-                    nama_lawan: item.nama_lengkap
+                    icon_lawan: item.icon_lawan,
+                    nama_lawan: item.nama_lengkap,
+                    pangkat_lawan: item.pangkat,
+                    kesatuan_lawan: item.kesatuan
                 })
 
             }} style={{
@@ -88,7 +91,7 @@ export default function ChatAdd({ navigation }) {
                     <Text style={{
                         fontFamily: fonts.secondary[400],
                         fontSize: windowWidth / 30
-                    }}>{item.pangkat} - {item.kesatuan}</Text>
+                    }}>{item.pangkat} - {item.kesatuan} </Text>
                 </View>
             </TouchableOpacity>
 

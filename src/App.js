@@ -14,8 +14,8 @@ export default function App() {
 
   PushNotification.createChannel(
     {
-      channelId: 'sikbenpers', // (required)
-      channelName: 'sikbenpers', // (required)
+      channelId: 'sikbinpers', // (required)
+      channelName: 'sikbinpers', // (required)
       channelDescription: 'A channel to categorise your notifications', // (optional) default: undefined.
       playSound: true, // (optional) default: true
       soundName: 'default', // (optional) See `soundName` parameter of `localNotification` function
