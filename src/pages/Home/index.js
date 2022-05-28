@@ -237,74 +237,51 @@ export default function Home({ navigation }) {
       <ScrollView>
 
 
-        <View
-          style={{
-            height: windowHeight / 9,
-            padding: 10,
-            marginBottom: 20,
-            backgroundColor: colors.white,
-            flexDirection: 'row',
-            // borderBottomLeftRadius: 10,
-            // borderBottomRightRadius: 10,
-          }}>
 
-          <View style={{ flex: 1, paddingTop: 10, flexDirection: 'row' }}>
-            <View style={{ paddingLeft: 10, flex: 3 }}>
 
-              <Text
-                style={{
-                  fontSize: windowWidth / 30,
-                  color: colors.primary,
-                  fontFamily: fonts.secondary[600],
-                }}>
-                Selamat datang,
-              </Text>
-              <Text
-                style={{
-                  fontSize: windowWidth / 30,
-                  color: colors.black,
-                  fontFamily: fonts.secondary[600],
-                }}>
-                {user.nama_lengkap}
-              </Text>
-              <Text
-                style={{
-                  fontSize: windowWidth / 30,
-                  color: colors.black,
-                  fontFamily: fonts.secondary[600],
-                }}>
-                {user.pangkat} - {user.kesatuan}
-              </Text>
-              <Text
-                style={{
-                  fontSize: windowWidth / 30,
-                  color: colors.black,
-                  fontFamily: fonts.secondary[600],
-                }}>
-                {user.telepon}
-              </Text>
-
-            </View>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('Account')}
+        <View style={{ padding: 10, marginBottom: 10 }}>
+          <Text style={{
+            fontFamily: fonts.secondary[600],
+            fontSize: windowHeight / 35,
+            color: colors.black
+          }}>Subditbinminpers PNS Ditajenad</Text>
+          <Text
+            style={{
+              fontSize: windowWidth / 30,
+              color: colors.primary,
+              fontFamily: fonts.secondary[600],
+            }}>
+            Selamat datang, <Text
               style={{
-                flex: 1,
-
-                padding: 10,
-                justifyContent: 'center',
-                alignItems: 'flex-end'
-
-
+                fontSize: windowWidth / 30,
+                color: colors.black,
+                fontFamily: fonts.secondary[600],
               }}>
-              <Image
-                source={{ uri: user.foto_user }}
-                style={{ width: 60, height: 60, borderRadius: 30 }}
-              />
-            </TouchableOpacity>
+              {user.nama_lengkap}
+            </Text>
+          </Text>
 
-          </View>
+          <Text
+            style={{
+              fontSize: windowWidth / 30,
+              color: colors.black,
+              fontFamily: fonts.secondary[600],
+            }}>
+            {user.pangkat} - {user.kesatuan}
+          </Text>
+          <Text
+            style={{
+              fontSize: windowWidth / 30,
+              color: colors.black,
+              fontFamily: fonts.secondary[600],
+            }}>
+            {user.telepon}
+          </Text>
 
         </View>
+
+
+
 
 
         <Image source={require('../../assets/logo.png')} style={{

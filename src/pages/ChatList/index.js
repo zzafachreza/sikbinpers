@@ -131,9 +131,9 @@ export default function ChatList({ navigation }) {
                 }>
                     <Text style={{
                         fontFamily: fonts.secondary[800],
-                        fontSize: windowHeight / 25,
+                        fontSize: windowHeight / 28,
                         color: colors.white
-                    }}>SIKBINPERS</Text>
+                    }}>SIKBINPERS PNS AD</Text>
                 </View>
                 <TouchableOpacity onPress={() => navigation.navigate('ChatAdd')} style={{
                     justifyContent: 'center',
