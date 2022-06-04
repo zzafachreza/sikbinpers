@@ -239,17 +239,19 @@ export default function Home({ navigation }) {
 
 
 
+        <Image source={require('../../assets/atas.jpg')} style={{
+          width: '100%',
+          height: 50,
+          alignSelf: 'center'
+        }} />
         <View style={{ padding: 10, marginBottom: 10 }}>
-          <Text style={{
-            fontFamily: fonts.secondary[600],
-            fontSize: windowHeight / 35,
-            color: colors.black
-          }}>Subditbinminpers PNS Ditajenad</Text>
+
           <Text
             style={{
               fontSize: windowWidth / 20,
               color: colors.primary,
               fontFamily: fonts.secondary[600],
+
             }}>
             Selamat datang, <Text
               style={{
@@ -281,15 +283,10 @@ export default function Home({ navigation }) {
         </View>
 
 
-        <Image source={require('../../assets/atas.jpg')} style={{
-          width: '100%',
-          height: 50,
-          marginBottom: 50,
-          alignSelf: 'center'
-        }} />
 
         <View style={{
-          justifyContent: 'center'
+          justifyContent: 'center',
+          paddingTop: 50,
         }}>
 
           <View

@@ -35,12 +35,14 @@ export default function () {
                 <Text style={{
                     color: colors.white,
                     fontFamily: fonts.secondary[600],
-                    fontSize: windowWidth / 20,
+                    fontSize: windowWidth / 30,
+                    maxWidth: windowWidth / 1.2,
                 }}>{a}</Text>
                 <Text style={{
                     color: colors.white,
                     fontFamily: fonts.secondary[600],
-                    fontSize: windowWidth / 20,
+                    fontSize: windowWidth / 30,
+                    maxWidth: windowWidth / 1.2,
                 }}>{b}</Text>
             </View>
         )
@@ -56,15 +58,15 @@ export default function () {
                 <Text style={{
                     color: colors.black,
                     fontFamily: fonts.secondary[400],
-                    fontSize: windowWidth / 25,
+                    fontSize: windowWidth / 30,
                 }}>{a}</Text>
                 <Text style={{
                     left: 5,
                     color: colors.black,
                     fontFamily: fonts.secondary[400],
-                    fontSize: windowWidth / 25,
+                    fontSize: windowWidth / 30,
                     textAlign: 'justify',
-                    maxWidth: windowWidth - 25,
+                    maxWidth: windowWidth / 1.2,
                 }}>{b}</Text>
             </View>
         )
@@ -93,7 +95,7 @@ export default function () {
 
 
 
-                <SubMenu a="b. " b="Reguler" />
+                <SubMenu a="b. " b="Fungsional" />
                 <SubMenuIsi a='- ' b='Surat Usul dari PDW' />
                 <SubMenuIsi a='- ' b='Fotokopi Kep NIP BKN' />
                 <SubMenuIsi a='- ' b='Fotokopi Kartu Pegawai' />

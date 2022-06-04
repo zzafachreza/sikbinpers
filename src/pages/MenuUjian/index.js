@@ -24,27 +24,6 @@ import { Icon } from 'react-native-elements';
 
 export default function () {
 
-    const SubMenu = ({ a, b }) => {
-        return (
-            <View style={{
-                backgroundColor: colors.secondary,
-                flexDirection: 'row',
-                padding: 10,
-                marginVertical: 10,
-            }}>
-                <Text style={{
-                    color: colors.white,
-                    fontFamily: fonts.secondary[600],
-                    fontSize: windowWidth / 20,
-                }}>{a}</Text>
-                <Text style={{
-                    color: colors.white,
-                    fontFamily: fonts.secondary[600],
-                    fontSize: windowWidth / 20,
-                }}>{b}</Text>
-            </View>
-        )
-    }
 
 
     const SubMenu2 = ({ a, b }) => {
@@ -66,14 +45,42 @@ export default function () {
                         height: 10,
                         width: 10,
                         fontFamily: fonts.secondary[600],
-                        fontSize: windowWidth / 25,
+                        fontSize: windowWidth / 30,
+                        maxWidth: windowWidth / 1.2,
                     }}></Text>
                 </View>
                 <Text style={{
                     left: 10,
                     color: colors.primary,
                     fontFamily: fonts.secondary[600],
-                    fontSize: windowWidth / 25,
+                    fontSize: windowWidth / 30,
+                    maxWidth: windowWidth / 1.2,
+                }}>{b}</Text>
+            </View>
+        )
+    }
+
+
+
+    const SubMenu = ({ a, b }) => {
+        return (
+            <View style={{
+                backgroundColor: colors.secondary,
+                flexDirection: 'row',
+                padding: 10,
+                marginVertical: 10,
+            }}>
+                <Text style={{
+                    color: colors.white,
+                    fontFamily: fonts.secondary[600],
+                    fontSize: windowWidth / 30,
+                    maxWidth: windowWidth / 1.2,
+                }}>{a}</Text>
+                <Text style={{
+                    color: colors.white,
+                    fontFamily: fonts.secondary[600],
+                    fontSize: windowWidth / 30,
+                    maxWidth: windowWidth / 1.2,
                 }}>{b}</Text>
             </View>
         )
@@ -89,16 +96,15 @@ export default function () {
                 <Text style={{
                     color: colors.black,
                     fontFamily: fonts.secondary[400],
-
-                    fontSize: windowWidth / 25,
+                    fontSize: windowWidth / 30,
                 }}>{a}</Text>
                 <Text style={{
                     left: 5,
                     color: colors.black,
                     fontFamily: fonts.secondary[400],
-                    fontSize: windowWidth / 25,
+                    fontSize: windowWidth / 30,
                     textAlign: 'justify',
-                    maxWidth: windowWidth - 50,
+                    maxWidth: windowWidth / 1.2,
                 }}>{b}</Text>
             </View>
         )
