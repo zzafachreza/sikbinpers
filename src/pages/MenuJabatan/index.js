@@ -78,7 +78,7 @@ export default function () {
         }}>
 
             <ScrollView showsVerticalScrollIndicator={false}>
-                <SubMenu a="a. " b="Reguler" />
+                <SubMenu a="a. " b="Struktural" />
                 <SubMenuIsi a='- ' b='Surat Usul dari PDW' />
                 <SubMenuIsi a='- ' b='Fotokopi Kep NIP BKN' />
                 <SubMenuIsi a='- ' b='Fotokopi Kartu Pegawai' />
@@ -93,7 +93,7 @@ export default function () {
 
 
 
-                <SubMenu a="b. " b="Struktural" />
+                <SubMenu a="b. " b="Reguler" />
                 <SubMenuIsi a='- ' b='Surat Usul dari PDW' />
                 <SubMenuIsi a='- ' b='Fotokopi Kep NIP BKN' />
                 <SubMenuIsi a='- ' b='Fotokopi Kartu Pegawai' />

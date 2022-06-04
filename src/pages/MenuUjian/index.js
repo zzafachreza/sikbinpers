@@ -98,7 +98,7 @@ export default function () {
                     fontFamily: fonts.secondary[400],
                     fontSize: windowWidth / 25,
                     textAlign: 'justify',
-                    maxWidth: windowWidth - 25,
+                    maxWidth: windowWidth - 50,
                 }}>{b}</Text>
             </View>
         )

@@ -247,13 +247,13 @@ export default function Home({ navigation }) {
           }}>Subditbinminpers PNS Ditajenad</Text>
           <Text
             style={{
-              fontSize: windowWidth / 30,
+              fontSize: windowWidth / 20,
               color: colors.primary,
               fontFamily: fonts.secondary[600],
             }}>
             Selamat datang, <Text
               style={{
-                fontSize: windowWidth / 30,
+                fontSize: windowWidth / 20,
                 color: colors.black,
                 fontFamily: fonts.secondary[600],
               }}>
@@ -281,13 +281,10 @@ export default function Home({ navigation }) {
         </View>
 
 
-
-
-
-        <Image source={require('../../assets/logo.png')} style={{
-          width: 150,
-          height: 150,
-          marginBottom: 20,
+        <Image source={require('../../assets/atas.jpg')} style={{
+          width: '100%',
+          height: 50,
+          marginBottom: 50,
           alignSelf: 'center'
         }} />
 

@@ -64,7 +64,7 @@ export default function () {
                     fontFamily: fonts.secondary[400],
                     fontSize: windowWidth / 25,
                     textAlign: 'justify',
-                    maxWidth: windowWidth - 25,
+                    maxWidth: windowWidth - 50,
                 }}>{b}</Text>
             </View>
         )
@@ -81,7 +81,7 @@ export default function () {
 
                 <SubMenuIsi a='- ' b='Asli surat permohonan dari yang bersangkutan diketahui Dansatminkal.' />
                 <SubMenuIsi a='- ' b='Surat usul dari Pangkotama/Kabalakpus' />
-                <SubMenuIsi a='- ' b='Foto kopi ijazah yang disahkan oleh pejabat yang berwenang.' />
+                <SubMenuIsi a='- ' b='Foto kopi ijazah dan akreditasi program studi yang disahkan oleh pejabat yang berwenang.' />
                 <SubMenuIsi a='- ' b='Foto kopi Skep Pengangkatan PNS' />
                 <SubMenuIsi a='- ' b='Foto kopi Skep Kenaikan Pangkat Terakhir' />
 

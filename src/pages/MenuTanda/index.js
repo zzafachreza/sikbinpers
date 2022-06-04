@@ -64,7 +64,7 @@ export default function () {
                     fontFamily: fonts.secondary[400],
                     fontSize: windowWidth / 25,
                     textAlign: 'justify',
-                    maxWidth: windowWidth - 25,
+                    maxWidth: windowWidth - 50,
                 }}>{b}</Text>
             </View>
         )
@@ -79,14 +79,12 @@ export default function () {
 
             <ScrollView showsVerticalScrollIndicator={false}>
 
-                <SubMenuIsi a='- ' b='RH singkat terbaru' />
-                <SubMenuIsi a='- ' b='Fotokopi Kep Pengangkatan PNS' />
-                <SubMenuIsi a='- ' b='Fotokopi Kep KP terakhir' />
-                <SubMenuIsi a='- ' b='Fotokopi Kep/Sprin Jabatan terakhir' />
-                <SubMenuIsi a='- ' b='Fotokopi STLUD bagi lulusan Ujian Dinas Tk.I' />
-                <SubMenuIsi a='- ' b='Fotokopi STLUPKP bagi lulusan UPKP Tk. Sarjana' />
-                <SubMenuIsi a='- ' b='Fotokopi ijazah Sarjana,Transkrip nilai dan Akreditasi dari BAN-PT' />
-                <SubMenuIsi a='- ' b='Fotokopi lulus Uji Kompetensi bagi yang menduduki jabatan fungsional' />
+                <SubMenuIsi a='- ' b='Asli surat permohonan dari yang bersangkutan' />
+                <SubMenuIsi a='- ' b='Surat usul dari PDW (Pang/Dan/Gub/Dir/Ka, Dandenma Mabesad)' />
+                <SubMenuIsi a='- ' b='Daftar Riwayat hidup' />
+                <SubMenuIsi a='- ' b='Fotokopi surat keputusan/keputusan pengangkatan CPNS/PNS' />
+                <SubMenuIsi a='- ' b='Fotokopi surat keputusan/keputusan kenaikan pangkat terakhir' />
+                <SubMenuIsi a='- ' b='Persyaratan administrasi disahkan oleh pejabat personel yang bersangkutan di buat rangkap dua' />
 
 
 

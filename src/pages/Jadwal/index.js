@@ -144,12 +144,12 @@ export default function ({ navigation }) {
         />
 
 
-        <DataKategori
+        {/* <DataKategori
           warna={colors.primary}
           onPress={() => navigation.navigate('MenuKaris')}
           icon="male-female-outline"
           nama="Karis/Karsu"
-        />
+        /> */}
 
         <DataKategori
           warna={colors.primary}

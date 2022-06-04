@@ -78,6 +78,11 @@ export default function Splash({ navigation }) {
               aspectRatio: scaleLogo,
             }}
           />
+          <Text style={{
+            fontFamily: fonts.secondary[800],
+            fontSize: windowWidth / 13,
+            marginTop: 10,
+          }}>SIKBINPERS PNS AD</Text>
         </View>
 
       </View>
